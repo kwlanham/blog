@@ -1,6 +1,8 @@
 = How to Post Blog Entries
+:showtitle:
+:page-navtitle: How to Post Blog Entries
 :page-layout: post
-:revdate: 2019-07-20 07:35:11 -0400
+:revdate: 2019-07-20 07:35:11
 :page-permalink: /instructions/
 :page-category: post
 :page-tags: [instructions]
@@ -8,10 +10,22 @@
 Even though this is a public site, I have posted this instruction to myself, because I sometimes go a long time between blog posts.
 This post is a helpful reminder.
 
-. Use the master branch for source content and configuration.
-. Use `git branch` to check which branch git is on now.
-. If not `master`, use `git checkout master` to switch to the master branch.
-. Add a new `*.adoc` file to the _posts folder.
+. Open terminal and cd to 'W/Githubsite' (where I've got the site locally)
+//. Use the master branch for source content and configuration.
+//. Use `git branch` to check which branch git is on now.
+//. If not `master`, use `git checkout master` to switch to the master branch.
+. Add a new file named ``yyyy-mm-dd-new-post.adoc` (substitute yyyy-mm-dd with publication date and new-post with short post name) to the _posts folder.
++
+[source, asciidoc]
+----
+= Post title goes here
+:showtitle:
+:page-navtitle: Name for posts feed goes here
+:page-root: ../../../
+
+Post content goes here
+----
++
 . Add the excerpt separator `//more` at the place where the excerpt stops.
 . To build the site on local machine, use `jekyll build` in terminal.
 . To preview on my local machine use `jekyll serve`.

@@ -17,7 +17,7 @@ title: Line by Line
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my blog. I hope you enjoy it too.
-baseurl: "blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  kwlanham

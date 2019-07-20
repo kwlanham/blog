@@ -10,6 +10,7 @@
 Even though this is a public site, I have posted this instruction to myself, because I sometimes go a long time between blog posts.
 This post is a helpful reminder.
 
+.Steps
 . Open terminal and cd to 'W/Githubsite' (where I've got the site locally)
 //. Use the master branch for source content and configuration.
 //. Use `git branch` to check which branch git is on now.

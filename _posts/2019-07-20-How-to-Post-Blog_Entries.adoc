@@ -1,5 +1,5 @@
 = How to Post Blog Entries
-:showtitle:
+//:showtitle:
 :page-navtitle: How to Post Blog Entries
 :page-layout: post
 :revdate: 2019-07-20 07:35:11
@@ -15,7 +15,7 @@ This post is a helpful reminder.
 //. Use the master branch for source content and configuration.
 //. Use `git branch` to check which branch git is on now.
 //. If not `master`, use `git checkout master` to switch to the master branch.
-. Add a new file named ``yyyy-mm-dd-new-post.adoc` (substitute yyyy-mm-dd with publication date and new-post with short post name) to the _posts folder.
+. Add a new blog post file named ``yyyy-mm-dd-new-post.adoc` (substitute yyyy-mm-dd with publication date and new-post with short post name) to the _posts folder.
 +
 [source, asciidoc]
 ----
@@ -32,7 +32,7 @@ Post content goes here
 . To preview on my local machine use `jekyll serve`.
 . Preview the local jekyll site in a web browser at http://localhost:4000.
 . Press ctrl-c to stop the process in the terminal.
-. Use git for version control on the local machine using the gh-pages branch.
+. Use git for version control on the local machine using the gh-pages branch. Use `git status` to check commits.
 . Use gh-pages, for the generated static content produced by jekyll. 
 . Use `git push githubRepo gh-pages` to push the new site to github.
 . Jekyll is an active project and is updated frequently, so in terminal use `gem update github-pages`.

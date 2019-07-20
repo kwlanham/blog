@@ -1,0 +1,8 @@
+= About
+:page-navtitle: About
+:page-layout: page
+:page-permalink: /about/
+//:showtitle:
+
+I write content occasionally, not for the world, but for me. 
+If you enjoy it too, that is a side effect, but not the goal.

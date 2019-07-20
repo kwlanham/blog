@@ -1,0 +1,19 @@
+language: ruby
+#script: "./build.sh"
+branches:
+  only:
+  - jekyll
+rvm:
+- 2.6.3
+env:
+  global:
+    secure: 6UFWZQL/xgFS0fEpcJAOoP97yQdonRSmTgBj82PPRTAcmw0YUeLY3A0mW6OEt5y0NSteJehLpY52CyA7hHEhYCQ7B+alGz1S/OrQnED1CUdYw17qukKL3xwjV5oal9e7yOATelzpCiExEKZSrvcov5MBWDWp8mHO5hi33tWGAWvftBqy99zh0JUUAq34EvS8iaILHQbmhsFNtwl3W+GQCEmZChideb8x3tm92BbxgZ3IOJ0LpYfHMeAovvInYBWV3rTFrwSXFB5JLfHHSvez/crxRQaSkoHSbVfL65CRivikQu6MEGJemlez06Qz5H0ZZ8KpfGxNZa8ggnoAkuo/6HaU7fA+EoBhPfgUQjVtEJBgbiingGGf6b0OJbNHUCB7W0DBmQpYWOGLj6hFvBoSHLl0WdhGLyzQlvBxqcuDxH8UEdcn2dQpN5MJ6LoRKIDxtHTL6CemMwVNC2gxUB0Ls7KY6VvZwHYQ9ax3tnO7+akTgoyQE3z8sEoT23I0uQYvpN3xE1vBfXmpJpzFMDXA15/9jPl9kYxZBsH3Kr/pZbxMHdvDCichO1D4y+EbjyxqVf0tLzDH9Ry7dAmuUH2wk2yGpTQuYD4OSlziw8Xa1RoMkEmLeyvpEEe3fRs7ltMliHvy1bHaD+gJh/h9LVWDkAvP7H9lJer6T0YeS4Tv+A0=
+#before_script:
+#- chmod +x "./build.sh"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: jekyll
